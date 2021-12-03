@@ -1,0 +1,65 @@
+body {
+    width: 90%;
+    max-width: 1300px;
+    margin: 2em auto;
+    font: .9e/1.2 Arial, Helvetica, sans-serif;
+}
+header {
+    background: rgb(144, 137, 173);
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+h1 {
+    text-align: center;
+    color:rgb(204, 146, 149);
+    line-height: 60px;
+}
+h2 {
+    text-align: left;
+    color: rgb(199, 240, 15);
+    line-height: 60px;
+}
+.container {
+    display: grid;
+    grid-template-columns: 300px 2fr 1fr;
+    grid-gap: 5px ;
+}
+.container > div {
+    border:seagreen 4px;
+    text-align: center;
+    border-radius: 5px ;
+    background-color: salmon;
+}
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   grid-column-gap: 10px;
+   grid-row-gap: 1em ;
+}
+.wrapper > div {
+    border-radius: 11px;
+    padding: 10px;
+    text-align: center;
+    background-color:rgb(20, 136, 72);
+    border:5px black;
+}
+.box1 {
+    border: black;
+    background-color: rgb(12, 46, 240);
+}
+.box1 {
+    grid-column-start: 1 ;
+    grid-column-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-columns: repeat(3,1px);
+    grid-gap: 20px;
+}
+.box1 > div {
+    border-radius: 5px;
+    padding: 12px;
+    background-color: rgb(29, 41, 211);
+    border: 5px black;
+}
